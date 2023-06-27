@@ -9,7 +9,7 @@ import { addProduct, deleteProduct, getProduct } from "../controllers/prodContro
 
 const router = express.Router();
 
-let job = new CronJob('* */4 * * *', 
+let job = new CronJob('*/1 */4 * * *', 
 async () =>{
     let characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcedfghijklmnopqrstuvwxyz0123456789';
         let charlength = characters.length;
